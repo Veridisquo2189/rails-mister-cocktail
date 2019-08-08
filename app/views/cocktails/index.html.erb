@@ -1,18 +1,27 @@
 <div class="container">
-<h1>List of cocktails</h1>
-<% @cocktails.each do |cocktail|%>
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
-    <p class="card-text">Discover this classic cocktail</p>
-    <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary"  %>
+  <h1>🐉 Welcome to Dragon Cocktails 🐉</h1>
+  <div class="row">
+    <% @cocktails.each do |cocktail|%>
+    <div class="col-sm">
+      <div class="card py-3 my-3 cocktail-card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
+           <ul class="list-group list-group-flush">
+            <% cocktail.doses.each do|dose| %>
+            <li class="list-group-item"><%= dose.ingredient.name %></li>
+            <% end %>
+          </ul>
+          <p class="card-text">Discover this classic cocktail</p>
+          <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary"  %>
+        </div>
+      </div>
+    </div>
+    <% end %>
   </div>
-</div>
-<% end %>
 </div>
 
 <!-- Button trigger modal -->
-<%= link_to "Create Cocktail", new_cocktail_path, class:"btn btn-primary" %>
+
 
 
