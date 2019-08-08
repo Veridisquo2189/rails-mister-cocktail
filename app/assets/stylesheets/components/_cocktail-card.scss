@@ -9,5 +9,8 @@
     opacity: 1;
     background-color: pink;
   }
+  & .card-img-top {
+    object-fit: contain;
+  }
 
 }
