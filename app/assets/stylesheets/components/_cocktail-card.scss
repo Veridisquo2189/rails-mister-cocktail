@@ -1,13 +1,14 @@
 .cocktail-card {
   opacity: 0.8;
   border-radius: 30px;
+  background-color: rgba(181, 73, 195, 0.4);
   & img {
     height: 180px;
   }
 
   &:hover {
     opacity: 1;
-    background-color: pink;
+    background-color: rgba(181, 73, 195, 0.6);
   }
   & .card-img-top {
     object-fit: contain;
