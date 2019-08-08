@@ -2,19 +2,23 @@ class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
   def index
     @cocktails = Cocktail.all
-    @cocktail = Cocktail.new
+
   end
 
   def show
-    @dose = Dose.where(params[:cocktail_id])
+    # @dose = Dose.find(cocktail_params)
+    # @dose.cocktail = @cocktail
   end
 
+  def new
+    @cocktail = Cocktail.new
+  end
   def create
     @cocktail = Cocktail.new(cocktail_params)
        if @cocktail.save
          redirect_to cocktail_path(@cocktail)
        else
-         render :index
+         render :new
        end
   end
 
