@@ -2,7 +2,7 @@
 
   <h1><%= @cocktail.name%></h1>
   <div class="card py-3 my-3 cocktail-card text-center" style="width: 18rem;">
-    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag @cocktail.photo, height: 150, width: 150, crop: :fill %>
     <ul>
       <% @cocktail.doses.each do |dose| %>
       <li><%= dose.description%> <%=dose.ingredient.name%> <%= link_to "delete dose", dose_path(dose), method: :delete %></li>

@@ -25,6 +25,7 @@
           </ul>
           <p class="card-text">Discover this classic cocktail</p>
           <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary btn-grad rounded-pill btn-grad:hover"  %>
+          <%= link_to 'Delete', cocktail_path(cocktail),class:"btn btn-primary btn-grad rounded-pill btn-grad:hover", method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </div>
     </div>
