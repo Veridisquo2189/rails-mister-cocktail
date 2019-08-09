@@ -16,7 +16,7 @@
       <div class="card py-3 my-3 cocktail-card" style="width: 18rem;">
         <figure class="filter">
         <img src="https://images.pexels.com/photos/970197/pexels-photo-970197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
            <ul class="list-group list-group-flush">
             <% cocktail.doses.each do|dose| %>
