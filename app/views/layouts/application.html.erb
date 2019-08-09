@@ -26,5 +26,13 @@
   <%= yield %>
   <%= javascript_include_tag "application" %>
   <%= javascript_pack_tag "application" %>
+<audio src="sound.mp3" autoplay type="audio/mpeg"></audio>
+</div>
+</audio>
+   <audio
+        src="<%= asset_path('sound.mp3') %>" autoplay="true" loop="infinite">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
 </body>
 </html>
