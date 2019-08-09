@@ -1,9 +1,16 @@
 <div class="container">
-  <h1>🐉 Welcome to Dragon Cocktails 🐉</h1>
+  <div class="header">
+    <img src="https://web.archive.org/web/20090902131122/http://geocities.com/xenographic/images/dragon.gif" alt="">
+    <img src="https://web.archive.org/web/20091026234613/http://cf.geocities.com/martinique_location_gites_studio/recette_cocktailfraise.gif" alt="">
+  <h1>Welcome to Dragon Cocktails</h1>
+  <img src="https://web.archive.org/web/20091026234613/http://cf.geocities.com/martinique_location_gites_studio/recette_cocktailfraise.gif" alt="">
+  <img src="https://web.archive.org/web/20090902131122/http://geocities.com/xenographic/images/dragon.gif" alt="">
+  </div>
   <div class="row">
     <% @cocktails.each do |cocktail|%>
     <div class="col-sm">
       <div class="card py-3 my-3 cocktail-card" style="width: 18rem;">
+        <figure class="filter">
         <img src="https://images.pexels.com/photos/970197/pexels-photo-970197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
@@ -13,7 +20,7 @@
             <% end %>
           </ul>
           <p class="card-text">Discover this classic cocktail</p>
-          <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary"  %>
+          <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary btn-grad rounded-pill"  %>
         </div>
       </div>
     </div>

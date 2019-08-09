@@ -1,14 +1,22 @@
 body {
-  background-image:linear-gradient(to bottom, rgba(255, 0, 132, 0.2), rgba(51, 0, 27, 0.2)), url('https://images.pexels.com/photos/2531183/pexels-photo-2531183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image:linear-gradient(to right, rgba(246, 79, 89, 0.6), rgba(196, 113, 237, 0.5), rgba(18, 194, 233, 0.8)), url('https://images.pexels.com/photos/2531183/pexels-photo-2531183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   font-family: 'Permanent Marker', cursive;
-  object-fit: cover;
+  animation: bg-pan-right 8s both;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  // filter: contrast(110%) brightness(110%) saturate(130%);
+
   & h1{
-    background-color: rgba(181, 73, 195, 0.4);
+    background-color: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     border-radius: 10px;
     text-align: center;
     color:rgb(252, 4, 180);
     font-family: 'Permanent Marker', cursive;
+    margin-top: 6px;
   }
 }
+
+
+.btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4 51%, #E55D87 100%)}
+.btn-grad:hover { background-position: right center; }

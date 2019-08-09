@@ -12,13 +12,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body>
+<body class= "bg-pan-left">
   <div class="navbar navbar-lewagon">
     <div>
-      <i class="fas fa-dragon icons"></i>
+      <img src="https://web.archive.org/web/20091027055212/http://www.geocities.com/soltic_99/greendragonflying.gif" style="height: 120px"alt="">
       <i class="fas fa-angle-down icons"></i>
     </div>
-    <%= link_to "Create Cocktail", new_cocktail_path, class:"btn btn-primary text rounded-pill" %>
+    <div>
+    <%= link_to "Create Cocktail", new_cocktail_path, class:"btn btn-primary text rounded-pill btn-grad" %>
+    <img src="https://web.archive.org/web/20090725035950/http://espanol.geocities.com/emeikungfu/dragonclao3d.gif" style="height: 120px"alt="">
+    </div>
   </div>
   <%= yield %>
   <%= javascript_include_tag "application" %>
