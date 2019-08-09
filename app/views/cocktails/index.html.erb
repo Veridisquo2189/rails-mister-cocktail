@@ -1,10 +1,14 @@
 <div class="container">
+  <div class="header-content">
+  <img src="https://web.archive.org/web/20061031233907/http://www.geocities.com/SouthBeach/Bluffs/1412/GRAPHICS/neoabnr.gif" alt="" >
   <div class="header">
     <img src="https://web.archive.org/web/20090902131122/http://geocities.com/xenographic/images/dragon.gif" alt="">
-    <img src="https://web.archive.org/web/20091026234613/http://cf.geocities.com/martinique_location_gites_studio/recette_cocktailfraise.gif" alt="">
+    <img src="https://web.archive.org/web/20091022055752/http://www.geocities.com/mabear45/apple_drink_sm_clr.gif" alt="">
   <h1>Welcome to Dragon Cocktails</h1>
-  <img src="https://web.archive.org/web/20091026234613/http://cf.geocities.com/martinique_location_gites_studio/recette_cocktailfraise.gif" alt="">
+  <img src="https://web.archive.org/web/20091022055752/http://www.geocities.com/mabear45/apple_drink_sm_clr.gif" alt="">
   <img src="https://web.archive.org/web/20090902131122/http://geocities.com/xenographic/images/dragon.gif" alt="">
+  </div>
+  <img src="https://web.archive.org/web/20060104143045/http://www.geocities.com/propheticangel2001/ani_gifs/neon_bar.gif" alt="">
   </div>
   <div class="row">
     <% @cocktails.each do |cocktail|%>
@@ -20,7 +24,7 @@
             <% end %>
           </ul>
           <p class="card-text">Discover this classic cocktail</p>
-          <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary btn-grad rounded-pill"  %>
+          <%= link_to "See Recipe", cocktail_path(cocktail), class:"btn btn-primary btn-grad rounded-pill btn-grad:hover"  %>
         </div>
       </div>
     </div>

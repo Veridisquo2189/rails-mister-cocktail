@@ -1,4 +1,5 @@
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.input :name %>
-  <%= f.submit 'Create', class:"btn btn-primary"%>
+  <%= f.submit 'Create', class:"btn btn-primary btn-grad rounded-pill"%>
+  <%= link_to "List of cocktails", cocktails_path, class: "btn btn-primary btn-grad rounded-pill"  %>
   <% end %>

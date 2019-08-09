@@ -6,3 +6,10 @@
     height: 120px;
   }
 }
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 0px;
+  justify-content:center;
+}
